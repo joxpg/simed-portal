@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { PagesRoutingModule } from './pages/pages.routing';
+import { AuthRoutingModule } from './auth/auth.routing';
 
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes),
-    PagesRoutingModule  
+    PagesRoutingModule,
+    AuthRoutingModule
   
   ],
   exports: [RouterModule]
